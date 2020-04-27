@@ -28,7 +28,7 @@ steps:
   displayName: 'Copy Files to Artifacts '
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)'
-    Contents: 'dist/**'
+    Contents: '*.*'
     TargetFolder: '$(Build.ArtifactStagingDirectory)/adminPortal'
     CleanTargetFolder: true
     OverWrite: true
