@@ -39,7 +39,7 @@ steps:
     awsCredentials: aether
     regionName: 'ap-southeast-1'
     bucketName: 'www.aethergames.xyz'
-    sourceFolder: '$(Build.ArtifactStagingDirectory)/adminPortal/dist'
+    sourceFolder: '$(Build.ArtifactStagingDirectory)/adminPortal/'
     filesAcl: 'bucket-owner-full-control'
     createBucket: true
 
