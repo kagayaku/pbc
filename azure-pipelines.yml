@@ -1,0 +1,61 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+  name: Azure Pipelines
+  demands: npm
+
+steps:
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    verbose: false
+
+- task: Npm@1
+  displayName: 'npm build'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run build'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to Artifacts '
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)'
+    Contents: 'dist/**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/adminPortal'
+    CleanTargetFolder: true
+    OverWrite: true
+
+- task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
+  displayName: 'S3 Upload: www.aethergames.xyz'
+  inputs:
+    awsCredentials: aether
+    regionName: 'ap-southeast-1'
+    bucketName: 'www.aethergames.xyz'
+    sourceFolder: '$(Build.ArtifactStagingDirectory)/adminPortal/dist'
+    filesAcl: 'bucket-owner-full-control'
+    createBucket: true
+
+- task: AmazonWebServices.aws-vsts-tools.AWSCLI.AWSCLI@1
+  displayName: 'AWS CLI: cloudfront'
+  inputs:
+    awsCredentials: aether
+    regionName: 'ap-southeast-1'
+    awsCommand: cloudfront
+    awsSubCommand: 'create-invalidation'
+    awsArguments: '--distribution-id E2QD3HXNTUZGE9 --paths /*'
+    failOnStandardError: false
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: adminPortal'
+  inputs:
+    ArtifactName: adminPortal
+  enabled: false
+
