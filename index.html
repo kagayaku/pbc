@@ -8,6 +8,7 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
@@ -62,6 +63,7 @@
 
 						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 							<li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
+							<li><a href="#" data-href="#aether"><div>Aether</div></a></li>
 							<li><a href="#" data-href="#consumer-section"><div>Use Case</div></a></li>
 							<li><a href="#" data-href="#investors-section"><div>Investors</div></a></li>
 							<li><a href="#" data-href="#partner-section"><div>Partners</div></a></li>
@@ -69,7 +71,7 @@
 							<li><a href="#"><div><i class="icon-world"></i> EN</div></a>
 								<ul>
 									<li><a href="#"><div>English</div></a></li>
-									<li><a href="#"><div>Chinese</div></a></li>
+									<li><a href="#" class="cn-font"><div>中文</div></a></li>
 								</ul>
 							</li>
 						</ul>
@@ -100,8 +102,8 @@
 											</div>
 											<p data-animate="fadeInUp" data-delay="200" class="mt-3">“Building Trust in the Untrusted World”, the decentalized blockchain technology revolutionalizes how governments, business enterprises and people interact and conduct business with transparency, immutability, enhanced security. It offers unlimited business opportunities with global market reach.</p>
 											<p data-animate="fadeInUp" data-delay="250" class="mb-5"> A key element of in the digital transformation, it promises to radically transform many industry verticals from gaming/entertainment to fintech/stock trading, telehealth/wellness, non-profit/charity fund raise and many others.</p>
-											<div class="banner-btn">
-												<a href="#" class="button nomargin pbc-btn" data-animate="fadeInUpBig" data-delay="600">contact us</a>
+											<div class="banner-btn" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+												<a href="#" data-scrollto="#contact-section" class="button nomargin pbc-btn ani" data-animate="fadeInUpBig" data-delay="600">contact us</a>
 											</div>
 
 										</div>
@@ -123,7 +125,7 @@
 											<p data-animate="fadeInUp" data-delay="200">Designing a secured blockchain e-wallets in mobile APPs has been a key challenge blockchain industry.</p> 
 											<p data-animate="fadeInUp" data-delay="250" class="mb-5">Aether Games is proud to be ONE of 1st platforms fully-integrated with <strong class="green-text">secured mobile APP and WebAPP</strong> enabling end-users to engage <strong class="green-text">ANYTIME, ANYWHERE</strong>.</p>
 											<div class="banner-btn">
-												<a href="#" class="button nomargin pbc-btn" data-animate="fadeInUpBig" data-delay="600">contact us</a>
+												<a href="#" data-scrollto="#contact-section" class="button nomargin pbc-btn ani" data-animate="fadeInUpBig" data-delay="600">contact us</a>
 											</div>
 
 										</div>
@@ -145,7 +147,7 @@
 											<p data-animate="fadeInUp" data-delay="200">Go global with one of our 1st bold innovations : A blockchain entertainment platform, paired with secured APP in your palms with intuitive UI/UX with exciting prizes.</p>
 											<p data-animate="fadeInUp" data-delay="250" class="mb-5">Come Join Us or Find out More!</p>
 											<div class="banner-btn">
-												<a href="#" class="button nomargin pbc-btn" data-animate="fadeInUpBig" data-delay="600">Find Out More</a>
+												<a href="#" data-scrollto="#aether" class="button nomargin pbc-btn ani" data-animate="fadeInUpBig" data-delay="600">Find Out More</a>
 											</div>
 
 										</div>
@@ -158,8 +160,9 @@
 						</div>
 					</div>
 					<div class="container slider-arrow-wrap">
-					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
-					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+						<div class="swiper-pagination"></div>
+						<div class="slider-arrow-left"><img src="images/ae/arrow-prev.png"></div>
+						<div class="slider-arrow-right"><img src="images/ae/arrow-next.png"></div>
 					</div>
 				</div>
 
@@ -179,7 +182,7 @@
 				<!-- Second Section
 				============================================= -->
 				<div class="section nobg">
-					<div class="container">
+					<div class="container" id="aether">
 						<div class="row">
 							<div class="col-md-7 nopadding">
 								<div class="about-box ab-01" data-animate="fadeInLeft" data-delay="150">
@@ -199,27 +202,27 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-5 nopadding">
-								<div class="about-box ab-02" data-animate="fadeInUp" data-delay="350">
+							<div class="col-md-5 nopadding" data-animate="fadeInUp" data-delay="350" style="background: rgba(33,51,83,1)">
+								<div class="about-box ab-02">
 									<div class="heading-block ae-title-block about-header mb-3">
 										<span>Aether</span>
 										<h2>Vision</h2>
 									</div>
 									<div class="about-body">
 										<ul class="list-unstyled iconlist ae-icon-list">
-											<li><div></div>To be an active contributor in eco-system that drives digital transformation forward using Blockchain as the underlying technology.</li>
+											<li class="mb-3"><div></div>To be an active contributor in eco-system that drives digital transformation forward using Blockchain as the underlying technology.</li>
 											<li><div></div>To be a socially responsible organization that delivers sustainable and innovative solutions that are disruptive with direct impact to people and businesses.</li>
 										</ul>
 									</div>
 								</div>
-								<div class="about-box ab-03" data-animate="fadeInUp" data-delay="450">
+								<div class="about-box ab-03">
 									<div class="heading-block ae-title-block about-header mb-3">
 										<span>Aether</span>
 										<h2>Mission</h2>
 									</div>
 									<div class="about-body">
 										<ul class="list-unstyled iconlist ae-icon-list">
-											<li><div></div>Ramp-up quickly to deliver a disruptive Blockchain based mobile gaming/entertainment platform with a totally integrated service solution targeting business partners globally as the 1st entry to the Blockchain eco-system.</li>
+											<li class="mb-3"><div></div>Ramp-up quickly to deliver a disruptive Blockchain based mobile gaming/entertainment platform with a totally integrated service solution targeting business partners globally as the 1st entry to the Blockchain eco-system.</li>
 											<li><div></div>To engage investors community with attractive investment opportunities to take part in the Blockchain revolution based on specific committed development products/services programs. And roadmap.</li>
 										</ul>
 									</div>
@@ -281,7 +284,7 @@
 						<div class="clearfix"></div>
 						<div class="row align-items-center pt-5">
 							<div class="col-md-6">
-								<figure style="padding: 0 25px;" data-animate="fadeIn" data-delay="100">
+								<figure style="padding: 0;" data-animate="fadeIn" data-delay="100">
 									<img src="images/ae/ae-coin.png">
 								</figure>
 							</div>
@@ -292,13 +295,13 @@
 								</div>
 								<h4 class="text-white mb-2 p-18" data-animate="fadeIn" data-delay="200">Many 1’s in Aether Games’ <i class="green-text">Play</i></h4>
 								<p class="mb-4 p-18" data-animate="fadeIn" data-delay="200">1st complete vertically integrated platform for Blockchain lotto with a purpose built administration manager that provides OAM capabilities and all the business management and business intelligence feature functionality.</p>
-								<ul class="ae-listing iconlist">
-									<li class="mb-4" data-animate="fadeInRight" data-delay="250"><i class="icon-line-arrow-right"></i>1st blockchain lottery that supports B2B, B2C and B2B2C business models</li>
-									<li class="mb-4" data-animate="fadeInRight" data-delay="350"><i class="icon-line-arrow-right"></i>1st blockchain mobile lottery that can be played by anyone, anywhere, anytime</li>
-									<li class="mb-4" data-animate="fadeInRight" data-delay="450"><i class="icon-line-arrow-right"></i>1st blockchain mobile lottery that is certified and licensed</li>
-									<li class="mb-4" data-animate="fadeInRight" data-delay="550"><i class="icon-line-arrow-right"></i>1st blockchain mobile apps that the players have full control of their wallets</li>
-									<li class="mb-4" data-animate="fadeInRight" data-delay="650"><i class="icon-line-arrow-right"></i>1st blockchain mobile apps lotto using a certified RNG that is integrated in the platform</li>
-									<li class="mb-4" data-animate="fadeInRight" data-delay="750"><i class="icon-line-arrow-right"></i>1st blockchain mobile lottery that the winning will be deposited in the ticket holders’ wallets directly without checking</li>
+								<ul class="ae-listing iconlist" data-animate="fadeInRight" data-delay="250">
+									<li class="mb-4"><i class="icon-line-arrow-right"></i>1st blockchain lottery that supports B2B, B2C and B2B2C business models</li>
+									<li class="mb-4"><i class="icon-line-arrow-right"></i>1st blockchain mobile lottery that can be played by anyone, anywhere, anytime</li>
+									<li class="mb-4"><i class="icon-line-arrow-right"></i>1st blockchain mobile lottery that is certified and licensed</li>
+									<li class="mb-4"><i class="icon-line-arrow-right"></i>1st blockchain mobile apps that the players have full control of their wallets</li>
+									<li class="mb-4"><i class="icon-line-arrow-right"></i>1st blockchain mobile apps lotto using a certified RNG that is integrated in the platform</li>
+									<li class="mb-4"><i class="icon-line-arrow-right"></i>1st blockchain mobile lottery that the winning will be deposited in the ticket holders’ wallets directly without checking</li>
 								</ul>
 							</div>
 						</div>
@@ -404,7 +407,7 @@
 											<div class="row align-items-center clearfix pt-5 pb-5">
 												<div class="col-md-6 mb-4">
 													<p class="feature-text">Our solutions for the financial institutions enables a blockchain platform and frameworks to manage secure digital financial instruments, transparent financial reporting, business resilience and process improvements that will power the next generation global finance and e-commerce.</p>
-													<p><a href="#" class="button nomargin pbc-btn">contact us</a></p>
+													<p><a href="#" data-scrollto="#contact-section" class="button nomargin pbc-btn">contact us</a></p>
 													
 												</div>
 												<div class="col-md-6">
@@ -417,7 +420,7 @@
 												<div class="col-md-6 mb-4">
 													<p class="feature-text">Blockchain ledger can fundamentally establish trust among stakeholders, donors and receipients in these industries.</p>
 													<p class="feature-text">Our solution for the charities, Non-Profit Organisations and foundations enables a fully transparent blockchain platform to manage, track and secured transactions for all parties, auditable financial records, and logistics process improvements.</p>
-													<p><a href="#" class="button nomargin pbc-btn">contact us</a></p>
+													<p><a href="#" data-scrollto="#contact-section" class="button nomargin pbc-btn">contact us</a></p>
 													
 												</div>
 												<div class="col-md-6">
@@ -430,7 +433,7 @@
 												<div class="col-md-6">
 													<p class="feature-text mb-4">Blockchain serves as tamper-proof, decentralised and secure database for tracking of billions of connected devices, patient medical records, enabling processing of transactions, and access to accurate and dynamic information.</p>
 													<p class="feature-text">For example, blockchain can extend medical practitioner access to authentic patient medical history from immutable history of smart devices information, whilst ensuring anonymity and confidentiality of user.</p>
-													<p><a href="#" class="button nomargin pbc-btn">contact us</a></p>
+													<p><a href="#" data-scrollto="#contact-section" class="button nomargin pbc-btn">contact us</a></p>
 													
 												</div>
 												<div class="col-md-6">
@@ -443,7 +446,7 @@
 												<div class="col-md-6">
 													<p class="feature-text mb-4">Provenance in blockchain enables businesses to safely collate data, and anyone to access and verify any information shared on the public ledger.</p>
 													<p class="feature-text">Blockchain provenance can be used for long-term record keeping from tracking of art authenticity, prevention of fraud/tempering in alcohol, fashion and luxury items to various digital assets including music, documents and images.</p>
-													<p><a href="#" class="button nomargin pbc-btn">contact us</a></p>
+													<p><a href="#" data-scrollto="#contact-section" class="button nomargin pbc-btn">contact us</a></p>
 													
 												</div>
 												<div class="col-md-6">
@@ -526,7 +529,7 @@
 								<div class="row justify-content-between">
 							<div class="col-lg-4 col-md-4">
 								<div class="address-section">
-									<h4 class="green-text">Get all the contact information.</h4>
+									<h4 class="green-text fw-900">Get all the contact information.</h4>
 									<ul class="iconlist">
 										<li><i class="icon-location"></i>10 Anson Road, #27-15<br>International Plaza<br>Singapore 079903</li>
 										<li><i class="icon-line2-call-end icon-ratate"></i>(65) 8245 2557</li>
@@ -538,7 +541,7 @@
 								<div class="card shadow-sm nobg">
 									<div class="card-body nobg pl-0 pr-0">
 										<div class="form-widget nobg">
-											<h4 class="green-text">Leave us a message.</h4>
+											<h4 class="green-text fw-900">Leave us a message.</h4>
 											<div class="form-result"></div>
 											<form class="nobottommargin" id="contactform" name="contactform" action="include/form.php" method="post">
 
@@ -575,7 +578,7 @@
 												</div>
 
 												<div class="col_full">
-													<button class="button nomargin pbc-btn btn-block" type="submit" id="contactform-submit" name="contactform-submit" value="submit">Send</button>
+													<button class="button nomargin pbc-btn pl-5 pr-5" type="submit" id="contactform-submit" name="contactform-submit" value="submit">Send</button>
 												</div>
 
 												<input type="hidden" name="prefix" value="template-contactform-">
@@ -629,7 +632,6 @@
 									<h5 class="mb-2 mt-2 footer-title">GLOBAL RECOGNITION</h5>
 									<figure class="footer-recognition">
 										<img src="images/ae/cert-02.png" style="width: 64px; height: auto;">
-										<figcaption>In-progress</figcaption>
 									</figure>
 								</div>
 
@@ -681,7 +683,7 @@
 
 	<!-- Go To Top
 	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
+	<div id="gotoTop" class="icon-angle-up pbc-gototop"></div>
 
 	<!-- External JavaScripts
 	============================================= -->
@@ -702,6 +704,11 @@
         }
       });
     </script>
-
+	<script>
+	$(window).scroll(function(){
+		$(".swiper-pagination").css("opacity", 1 - $(window).scrollTop() / 250);
+	  });
+	</script>
+	
 </body>
 </html>
