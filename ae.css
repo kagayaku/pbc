@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------------------------------
+.slider-parallax .slider-parallax-inner/*-----------------------------------------------------------------------------------
 
 	Theme Name: Aether 
 	Author: Pix Works Studio
@@ -768,7 +768,7 @@ p, li{
 
 .about-blockquote{
 	font-style: italic;
-	color: rgba(69,187,172,1.00);
+	color: rgba(69,187,172,1.00) !important;
 	font-size: 18px;
 	font-weight: 700
 }
@@ -879,6 +879,20 @@ p, li{
 	z-index: 2 !important
 }
 
+.ae-arrow:after{
+	position: absolute;
+	left: -20px;
+	top: 5px;
+	z-index: 1;
+	content: '';
+	background-image: url("images/ae/arrow-yellow.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 24px;
+	height: 18px;
+}
+
 
 @media (max-width: 575.98px){
 	.tab-nav.ae-tab li{
@@ -923,6 +937,11 @@ p, li{
 		bottom: 260px;
 		z-index: 2 !important;
 		display: none;
+	}
+	
+	.heading-block.ae-title-block span {
+		width: 94.5%;
+		line-height: 1.4rem;
 	}
 
 }
@@ -1340,11 +1359,16 @@ label,
 	}
 	
 	.swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
-		height: 110vh !important;
+		height: 140vh !important;
 	}
 	
+	.slider-parallax .slider-parallax-inner{
+		height: 140vh !important
+	}
+
+	
 	.slider-caption.ae-slider-caption p{
-		font-size: 14px;
+		font-size: 18px;
 		max-width: 100%;
 		margin:0 0 15px;
 	}
@@ -1552,7 +1576,27 @@ label,
 
 	.investor-wrap .inv-des.inv-des-02{
 		right: -5%;
-	}
+	}	
+}
 
+@media (width:360px){
+	.swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
+		height: 170vh !important;
+	}
+	
+	.slider-parallax .slider-parallax-inner{
+		height: 170vh !important
+	}
+}
+
+@media (width: 320px ){
+	.swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
+		height: 200vh !important;
+		
+	}
+	
+	.slider-parallax .slider-parallax-inner{
+		height: 200vh !important
+	}
 	
 }
