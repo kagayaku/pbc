@@ -1589,6 +1589,16 @@ label,
 	}
 }
 
+@media (width:384px){
+	.swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
+		height: 170vh !important;
+	}
+	
+	.slider-parallax .slider-parallax-inner{
+		height: 170vh !important
+	}
+}
+
 @media (width: 320px ){
 	.swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
 		height: 200vh !important;
